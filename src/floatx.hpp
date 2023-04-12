@@ -49,7 +49,8 @@
 #endif  // __CUDA_ARCH__
 
 
-#define USE_BUILTINS
+// MSVC doesn't provide __builtin_clzl()
+//#define USE_BUILTINS
 
 
 namespace flx {
